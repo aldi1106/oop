@@ -1,6 +1,6 @@
 //Tugas No.1
 class Movie {
-	constructor (title, duration, category) {
+	constructor (title, category, duration) {
 		this.title = title;
 		this.duration = duration;
 		this.category = category;
@@ -26,7 +26,7 @@ console.log(movie1.watch());
 
 
 class SoundTrack extends Movie{
-	constructor(title, duration, category, titleSong, singer) 
+	constructor(title, category, duration, titleSong, singer) 
 		{
 		super(title, duration, category);
 		this.titleSong = titleSong;
@@ -47,7 +47,7 @@ console.log(soundTrack1.movieSoundtrack());
 
 //Tugas 3
 class Channel extends Movie{
-	constructor(title, duration, category, channelName) 
+	constructor(title, category, duration, channelName) 
 		{
 		super(title, duration, category);
 		this.channelName = channelName;
